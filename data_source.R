@@ -1,4 +1,4 @@
-save_dir <- "/Users/yuu/Project/happy_hair_db/"
+save_dir <- ""
 
 # read in data
 agg_service_store_user_df <- readr::read_csv(
@@ -33,7 +33,7 @@ all_unique_service <- total_long_store_service_df$service %>% unique()
 
 find_group <- function(input_store, input_service, group_number){
   if (input_service == "All"){
-    input_service <- c("剪髮", "洗髮", "染髮", "燙髮", "護髮", "養護")
+    input_service <- c("01", "02", "03", "04", "05", "06")
   }else{
     input_service <- c(input_service)
   }  
